@@ -49,16 +49,7 @@ const AccountScreen = () => {
                 <Text style={styles.connectAcc}>CONNECTED </Text>
                 <View style={styles.subHeader}>
                     
-                    <View style={styles.mainContainer}>
-                        <Image // @ts-ignore
-          source={require("./assets/btnSigninwithGoogle.png")} style={styles.dot} />
-                        <View>
-                            <View style={styles.orderStatusContainer}>
-                                <Text style={styles.statusHeading}>Google</Text>
-                                <Text style={[styles.statusHeading, styles.statusTime]}>Connected</Text>
-                            </View>
-                        </View>
-                    </View>
+                    
                     <View style={[styles.mainContainer, styles.borderNull]}>
                         <Image // @ts-ignore
           source={require("./assets/btnSigninwithFacebook.png")} style={styles.dot} />
