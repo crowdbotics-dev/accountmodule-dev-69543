@@ -55,7 +55,7 @@ const AccountScreen = () => {
           source={require("./assets/btnSigninwithFacebook.png")} style={styles.dot} />
                         <View>
                             <View style={styles.orderStatusContainer}>
-                                <Text style={styles.statusHeading}>Facebook</Text>
+                                <Text style={styles.statusHeading}>Facebook Application</Text>
                                 <Text style={[styles.statusHeading, styles.statusTime]}>Connected</Text>
                             </View>
                         </View>
@@ -195,8 +195,9 @@ const styles = StyleSheet.create({
   },
   statusHeading: {
     fontSize: 14,
-    width: "50%",
-    color: "#222222"
+    width: 239,
+    color: "#222222",
+    height: 37
   },
   statusText: {
     paddingHorizontal: 10,

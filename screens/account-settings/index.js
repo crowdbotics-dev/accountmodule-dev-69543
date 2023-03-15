@@ -1,3 +1,4 @@
+import { Pressable } from "react-native";
 import React, { useState } from "react";
 import { Text, StyleSheet, View, SafeAreaView, TextInput, Switch, ScrollView } from "react-native";
 
@@ -41,13 +42,13 @@ const AccountSettingsScreen = params => {
         </View>
         <View style={styles.togglesContainer}>
           <View style={styles.toggle}>
-            <Text style={styles.toggleText}>Notifications</Text>
-            <Switch style={styles.toggleSwitch} value={notifications} onValueChange={value => setNotifications(value)} />
+            <View style={styles.PybdzgqJ}><Text style={styles.toggleText}>Notifications</Text></View>
+            <View style={styles.wmKQrKwC}><Switch style={styles.toggleSwitch} value={notifications} onValueChange={value => setNotifications(value)} /></View>
           </View>
-          <View style={styles.toggle}>
+          <Pressable><Pressable><View style={styles.toggle}>
             <Text style={styles.toggleText}>Email Notifications</Text>
             <Switch style={styles.toggleSwitch} value={emailNotifications} onValueChange={value => setEmailNotifications(value)} />
-          </View>
+          </View></Pressable></Pressable>
           <View style={styles.toggle}>
             <Text style={styles.toggleText}>SMS Notifications</Text>
             <Switch style={styles.toggleSwitch} value={smsNotifications} onValueChange={value => setSmsNotifications(value)} />
@@ -147,7 +148,10 @@ const styles = StyleSheet.create({
   toggle: {
     flexDirection: "row",
     justifyContent: "space-between",
-    alignItems: "center"
+    alignItems: "center",
+    flex: "1",
+    position: "relative",
+    backgroundColor: "#5a2828"
   },
   toggleText: {
     fontSize: 16,
@@ -155,6 +159,12 @@ const styles = StyleSheet.create({
     padding: 2,
     marginVertical: 12,
     marginLeft: 20
+  },
+  PybdzgqJ: {
+    flex: 1
+  },
+  wmKQrKwC: {
+    flex: 1
   }
 });
 export default AccountSettingsScreen;
