@@ -29,15 +29,15 @@ const AccountSettingsScreen = params => {
           <Text style={styles.billingText}>Billing information</Text>
           <View style={styles.nameInput}>
             <Text style={styles.inputText}>Full Name</Text>
-            <TextInput style={styles.input} placeholder="Enter your full name" placeholderTextColor="#9B9B9B" autoCapitalize="none" autoCorrect={false} value={name} onChangeText={text => setName(text)} />
+            <TextInput style={styles.input} placeholder="Enter your full " placeholderTextColor="#9B9B9B" autoCapitalize="none" autoCorrect={false} value={name} onChangeText={text => setName(text)} />
           </View>
           <View style={styles.nameInput}>
             <Text style={styles.inputText}>Email Address</Text>
-            <TextInput style={styles.input} placeholder="Enter your Email Address" placeholderTextColor="#9B9B9B" autoCapitalize="none" autoCorrect={false} value={email} onChangeText={text => setEmail(text)} />
+            <TextInput style={styles.input} placeholder="Enter  Email Address" placeholderTextColor="#9B9B9B" autoCapitalize="none" autoCorrect={false} value={email} onChangeText={text => setEmail(text)} />
           </View>
           <View style={styles.nameInput}>
             <Text style={styles.inputText}>Card number</Text>
-            <TextInput style={styles.input} placeholder="Enter your Card Number" placeholderTextColor="#9B9B9B" autoCapitalize="none" autoCorrect={false} value={cardNumber} onChangeText={text => setCardNumber(text)} />
+            <TextInput style={styles.input} placeholder="Enter  Card " placeholderTextColor="#9B9B9B" autoCapitalize="none" autoCorrect={false} value={cardNumber} onChangeText={text => setCardNumber(text)} />
           </View>
         </View>
         <View style={styles.togglesContainer}>
